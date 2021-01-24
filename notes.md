@@ -1,3 +1,5 @@
+#### https://www.youtube.com/watch?v=f5ygXQKF6M8&list=LL&index=1&t=30s
+
 - Install postman(used to test api methods)
 - Install node.js
 - You can open Node.js cmd to check the version (npm -v)
@@ -29,14 +31,43 @@
 - python manage.py makemigrations EmployeeApp
 - python manage.py migrate EmployeeApp
 
+### Serialisers
 - Create serializers in a separate file serializers.py
 - Then add api in views.py
 - Put method is used to update an existing record
 - Then create urls.py in the EmployeeApp folder
 - We also need to include these urls in the main urls.py of DjangoAPI project
 - Then in cmd type in - python manage.py runserver
-- Now copy the url and lets test the api methods in postman
-- 
+- Now copy the url and lets test the api methods in postman 
+
+#### If you are getting a pylint error (getting a 404 error in postman while testing) check this -> https://www.youtube.com/watch?v=llrYpQGNq3w 
+- make sure u r in the correct venv bottom left of the vscode
+- add this -> "python.autoComplete.extraPaths": ["./DjangoAPI"] in settings.json of .vscode (https://stackoverflow.com/questions/53939751/pylint-unresolved-import-error-in-visual-studio-code)
+
+### Adding folder for pictures
+- create a folder media to save pictures
+- Then add it in settings.py
+- import os
+- MEDIA_URL = '/media'
+- MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+- add in views.py
+- then in urls.py
+
+### Frontend
+- In a new folder - open cmd -> npx create-react-app my-app
+- cd my-app
+- code .
+- npm start (to view the frontend)
+- npm install react-bootstrap bootstrap
+- npm install --save react-router-dom
+- Now add bootstrap components in index.html
+- create files Home.js, Employee.js, Department.js , Navigation.js (for the Navbar on top)
+- Include them in App.js
+- Inside my-app folder create a file .env and add api urls 
+- Also add the file name(.env) in gitignore
 
 
-#### If you are getting a pylint error (getting a 404 error in postman while testing) check this -> https://www.youtube.com/watch?v=llrYpQGNq3w
+
+
+
+
