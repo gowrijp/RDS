@@ -28,3 +28,15 @@
 - In models.py of the app add the classes as required
 - python manage.py makemigrations EmployeeApp
 - python manage.py migrate EmployeeApp
+
+- Create serializers in a separate file serializers.py
+- Then add api in views.py
+- Put method is used to update an existing record
+- Then create urls.py in the EmployeeApp folder
+- We also need to include these urls in the main urls.py of DjangoAPI project
+- Then in cmd type in - python manage.py runserver
+- Now copy the url and lets test the api methods in postman
+- 
+
+
+#### If you are getting a pylint error (getting a 404 error in postman while testing) check this -> https://www.youtube.com/watch?v=llrYpQGNq3w
