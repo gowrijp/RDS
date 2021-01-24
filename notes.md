@@ -65,6 +65,8 @@
 - Include them in App.js
 - Inside my-app folder create a file .env and add api urls 
 - Also add the file name(.env) in gitignore
+- Create files AddDepModal, AddEmpModal, EditDepModal and EditDepModal
+- 
 
 
 
