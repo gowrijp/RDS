@@ -63,10 +63,14 @@
 - Now add bootstrap components in index.html
 - create files Home.js, Employee.js, Department.js , Navigation.js (for the Navbar on top)
 - Include them in App.js
-- Inside my-app folder create a file .env and add api urls 
+- Inside my-app folder create a file .env and add the two api urls given below
+- REACT_APP_API = http://127.0.0.1:8000/
+- REACT_APP_PHOTOPATH = http://127.0.0.1:8000/media/
 - Also add the file name(.env) in gitignore
 - Create files AddDepModal, AddEmpModal, EditDepModal and EditDepModal
-- 
+
+#### Make sure .env file is in the main my-app folder and not insider src !
+
 
 
 
